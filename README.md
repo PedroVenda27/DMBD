@@ -54,7 +54,7 @@ Os atributos dividem-se em três grandes grupos:
 
 - Atributos 1 a 33: valores entre 0 e 3 (ordinais)
 - Atributo 11 (histórico familiar): binário (0 ou 1)
-- Atributo 34 (idade): contínuo, com 8 valores ausentes representados por `?`
+- Atributo 34 (idade): contínuo, com 8 valores ausentes representados por `?`  e um valor a `0` estes problema serão resolvidos no Passo a Segir Data Preparation
 
 ---
 
@@ -62,8 +62,8 @@ Os atributos dividem-se em três grandes grupos:
 
 ### 4.1 Tratamento de Valores em Falta
 
-- Substituição da idade ausente pela **média** dos valores conhecidos.
-- Realizada com o operador `Replace Missing Values` no RapidMiner.
+- Substituição da idade ausente pela **média** dos valores conhecidos. 
+- Realizada com o operadores `Declare Missing Values`e `Replace Missing Values` no RapidMiner.
 
 ### 4.2 Conversão de Tipos de Dados
 
