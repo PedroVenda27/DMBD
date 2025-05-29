@@ -60,10 +60,11 @@ Os atributos dividem-se em três grandes grupos:
 
 ## 4. Data Preparation
 
-### 4.1 Tratamento de Valores em Falta
+### 4.1 Tratamento de Valores em Falta ou Nulos
 
-- Substituição da idade ausente pela **média** dos valores conhecidos. 
-- Realizada com o operadores `Declare Missing Values`e `Replace Missing Values` no RapidMiner.
+- Inicialmente e uma vez que temos apenas um Valor nulo `0` decidimos alterear este manualmente no dataset alterando o para o valor medio nas idades no caso Aproximadamente 40
+
+- Para a Substituição da idade ausente `?`utilizamos os operadores `Declare Missing Values`e `Replace Missing Values` estes vao respetivamente identificar e alterar todos os valores `?` pela **média** das idades no caso Aproximadamente 40
 
 ### 4.2 Conversão de Tipos de Dados
 
