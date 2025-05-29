@@ -65,6 +65,9 @@ Os atributos dividem-se em três grandes grupos:
 - Inicialmente e uma vez que temos apenas um Valor nulo `0` decidimos alterear este manualmente no dataset alterando o para o valor medio nas idades no caso Aproximadamente 40
 
 - Para a Substituição da idade ausente `?`utilizamos os operadores `Declare Missing Values`e `Replace Missing Values` estes vao respetivamente identificar e alterar todos os valores `?` pela **média** das idades no caso Aproximadamente 40
+  
+- ![Imagem WhatsApp 2025-05-29 às 15 44 08_d4dd59d6](https://github.com/user-attachments/assets/9dd28750-fa8f-4805-bc6e-f61e6407a8c4)
+
 
 ### 4.2 Conversão de Tipos de Dados
 
