@@ -66,7 +66,8 @@ Os atributos dividem-se em três grandes grupos:
 
 - Para a Substituição da idade ausente `?` utilizamos os operadores `Declare Missing Values` e `Replace Missing Values` estes vao respetivamente identificar e alterar todos os valores `?` pela **média** das idades no caso Aproximadamente 40
   
-![image](https://github.com/user-attachments/assets/ad2a4c9d-cc18-4090-980c-e2252b43d00d)
+![image](https://github.com/user-attachments/assets/29e3e9f9-4120-4b9c-b2e7-e0f64850c3f8)
+
 
 
 
