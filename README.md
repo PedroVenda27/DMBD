@@ -64,23 +64,21 @@ Os atributos dividem-se em três grandes grupos:
 
 - Inicialmente e uma vez que temos apenas um Valor nulo `0` decidimos alterear este manualmente no dataset alterando o para o valor medio nas idades no caso Aproximadamente 40
 
-- Para a Substituição da idade ausente `?`utilizamos os operadores `Declare Missing Values`e `Replace Missing Values` estes vao respetivamente identificar e alterar todos os valores `?` pela **média** das idades no caso Aproximadamente 40
+- Para a Substituição da idade ausente `?` utilizamos os operadores `Declare Missing Values` e `Replace Missing Values` estes vao respetivamente identificar e alterar todos os valores `?` pela **média** das idades no caso Aproximadamente 40
   
-- ![Imagem WhatsApp 2025-05-29 às 15 44 08_d4dd59d6](https://github.com/user-attachments/assets/9dd28750-fa8f-4805-bc6e-f61e6407a8c4)
+![image](https://github.com/user-attachments/assets/ad2a4c9d-cc18-4090-980c-e2252b43d00d)
+
 
 
 ### 4.2 Conversão de Tipos de Dados
 
-- Atributo `idade` convertido para tipo **numérico** após limpeza.
+- De Seguida uma vez que o Atributo age se encontra em `polinomial` ou seja representam opçoes para uma atributo porem apesar de serem valores como `"10" "20" "30"` etc encontram se numa string assim optamos por passar estes para `numerical` um vez que uma idade tem sempre de ser uma valor numerico exemplo `10 20 30` etc não permitindo opções escritas por exemplo "quarenta" que poderiam resultar em erros para esta no final do processo anterior adicionamos o operador parse number que transformou todos os elementos de `age` de `polinomial` para `numerical`
 
-### 4.3 Normalização e Codificação
+ ![image](https://github.com/user-attachments/assets/8f6c73ef-e7d1-4bcd-b6f1-fec55e98928c)
+ 
+![image](https://github.com/user-attachments/assets/233f031f-55c8-43f2-8190-bd106e3d3605)
 
-- Não aplicada, pois o algoritmo de árvore de decisão **não é sensível à escala**.
 
-### 4.4 Seleção de Atributos
-
-- Todos os atributos foram mantidos.
-- A seleção será automaticamente gerida pelo algoritmo C4.5.
 
 ---
 
