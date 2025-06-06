@@ -65,31 +65,69 @@ Os atributos dividem-se em três grandes grupos:
 - Inicialmente e uma vez que temos apenas um Valor nulo `0` decidimos alterear este manualmente no dataset alterando o para o valor medio nas idades no caso Aproximadamente 40
 
 - Para a Substituição da idade ausente `?` utilizamos os operadores `Declare Missing Values` e `Replace Missing Values` estes vao respetivamente identificar e alterar todos os valores `?` pela **média** das idades no caso Aproximadamente 40
-  
+
+
+### Declare Missing Values - image
+
+![image](https://github.com/user-attachments/assets/3d8a76b3-8a7d-476c-a32a-5d668ac89845)
+
+### Replace Missing Values - Image
+![image](https://github.com/user-attachments/assets/b6a03de1-72dd-4be8-8a0f-9b3268afe5f0)
+
+### Design - Image
 ![image](https://github.com/user-attachments/assets/29e3e9f9-4120-4b9c-b2e7-e0f64850c3f8)
-
-
-
+  
 
 ### 4.2 Conversão de Tipos de Dados
 
-- De Seguida uma vez que o Atributo age se encontra em `polinomial` ou seja representam opçoes para uma atributo porem apesar de serem valores como `"10" "20" "30"` etc encontram se numa string assim optamos por passar estes para `numerical` um vez que uma idade tem sempre de ser uma valor numerico exemplo `10 20 30` etc não permitindo opções escritas por exemplo "quarenta" que poderiam resultar em erros para esta no final do processo anterior adicionamos o operador parse number que transformou todos os elementos de `age` de `polinomial` para `numerical`
+De seguida, uma vez que o atributo `age` está em formato `polinomial`, ou seja, representa possíveis opções para um atributo, independentemente de serem valores como `"10"`, `"20"`, `"30"`, etc., e encontrarem-se numa string, optamos por convertê-los para `numerical`, utilizando o operador `Parse Numbers`. Isso porque a idade deve ser sempre um valor numérico, como `10`, `20`, `30`, etc., e não permitir opções escritas, como "quarenta", que poderiam resultar em erros. No final do processo, adicionamos o operador `Parse Numbers`, que transformou todos os elementos de `age` de `polinomial` para `numerical`.
 
- ![image](https://github.com/user-attachments/assets/8f6c73ef-e7d1-4bcd-b6f1-fec55e98928c)
- 
+
+### Parse Numbers - Image
 ![image](https://github.com/user-attachments/assets/233f031f-55c8-43f2-8190-bd106e3d3605)
+
+
+### Design - Image
+![image](https://github.com/user-attachments/assets/8f6c73ef-e7d1-4bcd-b6f1-fec55e98928c)
 
 
 
 ---
 
+![image](https://github.com/user-attachments/assets/5bd032ed-c924-4de6-b233-ba32cbe4a432)
+
+
 ## 5. Modeling
 
-### 5.1 Técnica Utilizada
+Passando agora a fase da modelação e aplicaçao da tecnica de classificação iremos utilizar um Algoritmo C4.5 (Decision Tree)e no Rapid Miner este será feito com recurso a diffrentes critérios de divisão de dados (gain_ratio, information_gain, gini_index e
+accuracy) e utilizando os restantes parametros como default.
 
-- Algoritmo **C4.5 (Decision Tree)**
+# 5.1 Alteração da Role do Atributo
 
-### 5.2 Critérios de Divisão
+Para este e antes de Inicia o Desenvolvimento da Arvore foi necessario defenir umm `attribute` no caso `age` como `role label` através do operador `Set Role`
+
+![image](https://github.com/user-attachments/assets/ac6f274c-0660-459a-b5d8-d158c5759868)
+![image](https://github.com/user-attachments/assets/10c78020-535d-4c1c-b6b6-c26551e6faea)
+
+Este após alterado fica marcado pela cor verde na coluna do atributo
+
+![image](https://github.com/user-attachments/assets/8cabac72-89d3-4fff-859a-8b2c5fcfaa33)
+
+
+
+# 5.1 Técnica Utilizada - Critérios de Divisão
+
+Pasando agora aos critrios de divisão iremos explicar em que cada um consiste bem como analisar os seus Resultados
+
+### 5.1.1 Gain_Ratio
+
+![image](https://github.com/user-attachments/assets/5bd032ed-c924-4de6-b233-ba32cbe4a432)
+
+### 5.1.2 Information_Gain
+
+### 5.1.3 Gini_Index
+
+### 5.1.4 Accuracy
 
 Testados quatro critérios diferentes:
 - Gain Ratio
