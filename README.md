@@ -406,6 +406,7 @@ Na Parte do Training Como dito Anteriormente Apenas temos de inserir o Operador 
 
 Por sua vez na Parte do Training basta selecionar os critrerio de `Acuracy` `Classification error` e `Root Mean Squared Error`
 
+
 ![image](https://github.com/user-attachments/assets/dae6babd-35aa-4842-be21-4cd0ed674db1)
 ![image](https://github.com/user-attachments/assets/f898ebe5-7407-49f9-b673-a3f8a6b0092b)
 
@@ -508,7 +509,7 @@ True:	2	1	3	5	4	6
 root_mean_squared_error: 0.203 +/- 0.087 (micro average: 0.219 +/- 0.000)
 ```
 
-## 6.4.4 Accuracy - Results
+### 6.4.4 Accuracy - Results
 
 
 ![image](https://github.com/user-attachments/assets/1043a979-3bd3-49f1-8994-6732a69fb392)
