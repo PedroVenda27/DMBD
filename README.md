@@ -408,6 +408,7 @@ Por sua vez na Parte do Training basta selecionar os critrerio de `Acuracy` `Cla
 
 
 ![image](https://github.com/user-attachments/assets/dae6babd-35aa-4842-be21-4cd0ed674db1)
+
 ![image](https://github.com/user-attachments/assets/f898ebe5-7407-49f9-b673-a3f8a6b0092b)
 
 ## 6.4 Results
