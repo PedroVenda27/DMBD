@@ -137,6 +137,27 @@ Gain_Ratio = \frac{Information\_Gain}{Split\_Info}
 
 ![image](https://github.com/user-attachments/assets/2a94d611-04eb-4b09-ba66-435c75fd8a5a)
 
+#### Percurso:
+- Raiz: **melanin incontinence**  
+  Se o valor for menor ou igual a 0.5, avança na análise.
+- Passa por **polygonal papules** e **fibrosis of the papillary dermis** – atributos histopatológicos e clínicos relevantes.
+- Segue por:
+  - **perifollicular parakeratosis**
+  - **clubbing of the rete ridges**
+  - **thinning of the suprapapillary epidermis**
+  - **koebner phenomenon**
+- Termina com:
+  - **PNL infiltrate**
+  - **erythema**
+  - **disappearance of the granular layer**
+
+#### Conclusões:
+- As classes terminais (2, 4, 6...) representam diferentes diagnósticos dermatológicos.
+  - Classe **2 (azul)** → pode indicar uma forma leve ou intermediária de dermatose.
+  - Classe **6 (vermelho)** → possível condição inflamatória mais grave.
+- A árvore evidencia como a combinação de alterações histológicas com fenómenos clínicos (como o fenómeno de Koebner) permite distinguir eficazmente entre diferentes diagnósticos.
+
+
 **TREE OUTPUT CODE**
 
 ```code
@@ -191,6 +212,24 @@ Onde:
 
 ![image](https://github.com/user-attachments/assets/dc074e0e-fed9-4f7f-9f08-1832c2d3e2be)
 
+#### Percurso:
+- Raiz: **fibrosis of the papillary dermis**
+  - Se presente, analisa-se **spongiosis** (separação celular na epiderme), levando às classes 2 ou 1 conforme a intensidade.
+  - Caso ausente, segue para:
+    - **elongation of the rete ridges**
+    - **band-like infiltrate**
+    - **koebner phenomenon**
+- Continua por:
+  - **PNL infiltrate + erythema**
+  - **perifollicular parakeratosis**, **fibrosis** (novamente), e **disappearance of the granular layer**
+
+#### Conclusões:
+- Lesões estruturais profundas (como a fibrose) revelam-se essenciais para o diagnóstico.
+- A árvore **reutiliza atributos em diferentes caminhos**, sugerindo que os mesmos sinais podem indicar doenças distintas, consoante o contexto.
+  - **Classe 4 (amarelo)** é prevalente.
+  - **Classe 6** surge com infiltrado PNL mas **sem eritema**, podendo apontar para uma doença menos vascular/inflamatória.
+
+
 
 **TREE OUTPUT CODE**
 
@@ -243,6 +282,23 @@ Onde:
 
 ![image](https://github.com/user-attachments/assets/09a41b30-89dd-4cf3-852a-caaf1dee95c0)
 
+#### Percurso:
+- Raiz: **thinning of the suprapapillary epidermis** (atrofia epitelial)
+- Em seguida:
+  - **vacuolisation and damage of basal layer**
+  - **fibrosis of the papillary dermis**
+  - **koebner phenomenon**
+- Divide-se em dois ramos:
+  - **PNL infiltrate + erythema**
+  - **follicular papules + disappearance of the granular layer + knee and elbow involvement**
+
+#### Conclusões:
+- A árvore contrapõe **resposta inflamatória generalizada** (infiltrado + eritema) com **sinais cutâneos localizados** (joelhos/cotovelos).
+  - **Classe 1** → poucos sinais → forma benigna.
+  - **Classe 4** → infiltrado + eritema → doença inflamatória típica.
+  - **Classe 2 (azul)** → alterações estruturais com poucos sinais clínicos → diagnóstico diferencial possível.
+
+
 **TREE OUTPUT CODE**
 
 ```code
@@ -287,6 +343,23 @@ Accuracy = \frac{N_{correct}}{N_{total}}
 **TREE IMAGE OUTPUT**
 
 ![image](https://github.com/user-attachments/assets/528f15f4-5560-4d3b-83e5-d3b219eb2087)
+
+#### Percurso:
+- Inicia-se com **fibrosis of the papillary dermis** (como na Árvore 2).
+- Depois segue:
+  - **elongation of the rete ridges**
+  - **vacuolisation and damage of basal layer**
+  - **koebner phenomenon**
+  - **follicular papules**
+- Prossegue com:
+  - **disappearance of the granular layer**
+  - repetição de **fibrosis**
+  - e finalmente, análise de **atributo quantitativo ≤ 1**
+
+#### Conclusões:
+- Semelhante à Árvore 3, mas **com maior foco em alterações estruturais** do que em fenómenos clínicos.
+  - **Classe 5** aparece em ramos com **múltiplas alterações histológicas** → diagnóstico mais avançado.
+  - **Classe 2** surge em cenários com **poucos marcadores clínicos**, sugerindo formas menos visíveis ou subclínicas da doença.
 
 
 **TREE OUTPUT CODE**
