@@ -386,7 +386,7 @@ elongation of the rete ridges ≤ 0.500
 
 ---
 
-# 6. Evaluating
+# 6. Evaluation
 
 Por ultimo na Fase de Avaliaçao fase vamos analisar as performances obtidas de cada uma das árvores obtidas. Nesta Vamos Utlizar o Operador ``Cross Validation`` com k folds 10 para a validação) este divide se em duas partes **Training** Onde é utilizado o operador do Algoritmo C4.5 `Decision Tree` e a escolha dos criterios de divisão de dados (gain_ratio, information_gain, gini_index eaccuracy) e uma parte de **Testing** onde serão utilizados os operadores de `Apply Model` e `Performence Classification` utilizando os criterios de `Acuracy` `Classification error` e `Root Mean Squared Error`
 
