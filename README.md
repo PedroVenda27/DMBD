@@ -95,7 +95,7 @@ De seguida, como o atributo `class label` se encontrava no formato integer ou se
 Entrando agora na fase da modelação e aplicaçao da tecnica de classificação iremos utilizar um Algoritmo C4.5 (Decision Tree) e no Rapid Miner este será feito com recurso a diffrentes critérios de divisão de dados (gain_ratio, information_gain, gini_index e
 accuracy) e utilizando os restantes parametros como default.
 
-## 5.1 Alteração da Role do Atributo
+## 5.1 Alteração da Role do Atributo "LABEL"
 
 De forma a iniciar a fase de modelação e antes de Iniciar o Desenvolvimento da Árvore de decisão propriamente dita foi necessario defenir um`attribute` no caso `class label` como `role label` através do operador `Set Role`
 
@@ -110,13 +110,13 @@ Este após alterado fica marcado pela cor verde na coluna do atributo
 
 
 
-## 5.3 Algoritmo C4.5 (Decision Tree)
+## 5.2 Algoritmo C4.5 (Decision Tree)
 
-## 5.4 Critérios de Divisão de Dados
+## 5.3 Critérios de Divisão de Dados
 
 Pasando agora aos critrios de divisão iremos explicar no que cada um consiste, demostar a sua formula e bem como analisar os seus Resultados no ambito do trabalho
 
-### 5.4.1 Gain_Ratio
+### 5.3.1 Gain_Ratio
 
 ![image](https://github.com/user-attachments/assets/a27d4280-1f74-46a0-a367-9032c77be0b9)
 
@@ -184,7 +184,7 @@ elanin incontinence ≤ 0.500
 |   |   |   |   |   |   |   disappearance of the granular layer ≤ 0.500: 2 {2=59, 1=0, 3=0, 5=0, 4=3, 6=0}
 ```
 
-### 5.4.2 Information_Gain
+### 5.3.2 Information_Gain
 
 ![image](https://github.com/user-attachments/assets/0600acdc-fe43-4926-aed2-fcf8a800456f)
 
@@ -256,7 +256,7 @@ elongation of the rete ridges ≤ 0.500
 |   |   |   |   |   disappearance of the granular layer > 0.500: 4 {2=0, 1=0, 3=0, 5=0, 4=6, 6=0}
 |   |   |   |   |   disappearance of the granular layer ≤ 0.500: 2 {2=51, 1=0, 3=0, 5=0, 4=3, 6=0}
 ```
-### 5.4.3 Gini_Index
+### 5.3.3 Gini_Index
 
 ![image](https://github.com/user-attachments/assets/3af66d09-39bd-4dc1-a4db-4c0f17d55259)
 
@@ -324,7 +324,7 @@ thinning of the suprapapillary epidermis ≤ 0.500
 ```
 
 
-### 5.4.4 Accuracy
+### 5.3.4 Accuracy
 
 ![image](https://github.com/user-attachments/assets/7875e1ce-f6c2-4761-a594-122523163d10)
 
