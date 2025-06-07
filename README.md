@@ -118,9 +118,9 @@ Este após alterado fica marcado pela cor verde na coluna do atributo
 
 Pasando agora aos critrios de divisão iremos explicar no que cada um consiste, demostar a sua formula e bem como analisar os seus Resultados no ambito do trabalho
 
-### 5.1.1 Gain_Ratio
+### 5.4.1 Gain_Ratio
 
-*Definição:**  
+**Definição:**  
 O Gain Ratio é uma modificação do critério de Information Gain, que visa penalizar atributos com muitos valores possíveis. Isso ajuda a evitar que o modelo favoreça atributos com muitos valores, mas que podem não ser os melhores para a classificação. Ele é calculado dividindo o ganho de informação pelo Split Info (informação sobre a divisão do atributo).
 
 **Fórmula:**
@@ -131,7 +131,7 @@ Gain_Ratio = \frac{Information\_Gain}{Split\_Info}
 
 ### AMBITO DO PROBLEMA - INTERPERTAÇAO DE RESULTADOS
 
-**TREE IMAGE OUTPUT*
+**TREE IMAGE OUTPUT** 
 ![image](https://github.com/user-attachments/assets/5bd032ed-c924-4de6-b233-ba32cbe4a432)
 
 **TREE OUTPUT CODE**
@@ -178,9 +178,9 @@ class label ≤ 5.500
 |   |   |   |   |   |   |   |   oral mucosal involvement ≤ 2.500: 40 {55=12, 8=2, 26=2, 40=24, 45=7, 41=2, 18=9, 57=1, 22=14, 30=11, 20=6, 21=3, 10=3, 65=2, 38=0, 23=2, 17=4, 51=7, 42=6, 44=3, 33=10, 43=3, 50=14, 34=5, ?=0, 15=2, 46=6, 62=7, 35=11, 48=4, 12=1, 52=9, 60=9, 32=6, 19=6, 29=3, 25=14, 36=10, 13=0, 27=10, 31=1, 28=4, 64=1, 39=2, 47=6, 16=4, 7=0, 70=3, 37=0, 61=2, 67=1, 56=4, 53=1, 24=2, 58=0, 49=1, 63=1, 68=1, 9=0, 75=0}
 ```
 
-### 5.1.2 Information_Gain
+### 5.4.2 Information_Gain
 
-*Definição:**  
+** Definição:**  
 O Information Gain (IG) é uma métrica que calcula a redução na incerteza (ou entropia) do sistema após uma divisão. Ele é baseado na teoria da informação e mede o quanto um atributo ajuda a reduzir a incerteza sobre a classe ou variável alvo. Quanto maior o ganho de informação, mais eficaz é o atributo na divisão dos dados.
 
 **Fórmula:**
@@ -417,9 +417,9 @@ perifollicular parakeratosis ≤ 0.500
 |   |   |   |   |   |   |   |   koebner phenomenon > 0.500: 35 {55=0, 8=0, 26=0, 40=1, 45=0, 41=0, 18=0, 57=0, 22=0, 30=0, 20=0, 21=0, 10=0, 65=0, 38=0, 23=0, 17=0, 51=0, 42=0, 44=0, 33=0, 43=0, 50=0, 34=0, ?=0, 15=0, 46=0, 62=0, 35=3, 48=0, 12=0, 52=0, 60=0, 32=0, 19=0, 29=0, 25=0, 36=0, 13=0, 27=0, 31=1, 28=0, 64=0, 39=0, 47=0, 16=0, 7=0, 70=0, 37=0, 61=0, 67=0, 56=0, 53=0, 24=0, 58=0, 49=0, 63=0, 68=0, 9=0, 75=0}
 |   |   |   |   |   |   |   |   koebner phenomenon ≤ 0.500: 15 {55=0, 8=0, 26=0, 40=0, 45=0, 41=0, 18=0, 57=0, 22=0, 30=0, 20=0, 21=0, 10=0, 65=0, 38=0, 23=0, 17=0, 51=0, 42=0, 44=0, 33=0, 43=0, 50=0, 34=0, ?=0, 15=1, 46=0, 62=0, 35=1, 48=0, 12=0, 52=0, 60=0, 32=0, 19=0, 29=0, 25=1, 36=0, 13=0, 27=0, 31=0, 28=0, 64=0, 39=0, 47=0, 16=0, 7=0, 70=0, 37=0, 61=0, 67=0, 56=0, 53=0, 24=0, 58=0, 49=0, 63=0, 68=0, 9=0, 75=0}
 ```
-### 5.1.3 Gini_Index
+### 5.4.3 Gini_Index
 
-*Definição:** 
+**Definição:** 
 O Gini Index é uma métrica de impureza que mede a desigualdade nas classes dentro de um nó. Ele é utilizado principalmente em árvores de decisão como o algoritmo CART (Classification and Regression Tree). O índice de Gini calcula a probabilidade de uma amostra ser classificada incorretamente se ela fosse rotulada aleatoriamente.
 
 **Fórmula:**
@@ -462,9 +462,9 @@ class label ≤ 5.500: 40 {55=14, 8=2, 26=3, 40=26, 45=7, 41=4, 18=9, 57=2, 22=1
 ```
 
 
-### 5.1.4 Accuracy
+### 5.4.4 Accuracy
 
-*Definição:** 
+**Definição:** 
 A Accuracy é a taxa de acerto de um modelo, ou seja, a proporção de previsões corretas em relação ao total de previsões feitas. Ela mede a capacidade do modelo de prever corretamente as instâncias de dados.
 
 **Fórmula:**
