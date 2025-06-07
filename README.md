@@ -556,7 +556,7 @@ root_mean_squared_error: 0.207 +/- 0.088 (micro average: 0.222 +/- 0.000)
 | gini_index           | 95.08 ± 3.59       | 4.92 ± 3.59               | 0.203  |
 | accuracy (critério)  | 95.06 ± 3.85       | 4.94 ± 3.85               | 0.207  |
 
-# 7. ANALISE E CONCLUSÕES Finais
+# 7. ANALISE E CONCLUSÕES FINAIS
 
 
 Após a aplicação integral da metodologia CRISP-DM — desde a compreensão do problema e dos dados, passando pela preparação dos dados, até à fase de modelação com o algoritmo C4.5 — avaliámos quatro critérios de divisão para a construção da árvore de decisão sobre o dataset Dermatology: gain ratio, information gain, gini index e accuracy.
