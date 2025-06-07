@@ -87,8 +87,6 @@ De seguida, como o atributo `class label` se encontrava no formato integer ou se
 ![image](https://github.com/user-attachments/assets/cbac0bab-6a4a-4fff-8d50-6d66e34a3410)
 
 
-
-
 ---
 
 
@@ -313,6 +311,8 @@ elongation of the rete ridges ≤ 0.500
 |   |   |   |   |   fibrosis of the papillary dermis ≤ 1: 2 {2=52, 1=0, 3=0, 5=0, 4=3, 6=0}
 ```
 
+---
+
 # 6. Evaluating
 
 Por ultimo na Fase de Avaliaçao fase vamos analisar as performances obtidas de cada uma das árvores obtidas. Nesta Vamos Utlizar o Operador ``Cross Validation`` com k folds 10 para a validação) este divide se em duas partes **Training** Onde é utilizado o operador do Algoritmo C4.5 `Decision Tree` e a escolha dos criterios de divisão de dados (gain_ratio, information_gain, gini_index eaccuracy) e uma parte de **Testing** onde serão utilizados os operadores de `Apply Model` e `Performence Classification` utilizando os criterios de `Acuracy` `Classification error` e `Root Mean Squared Error`
@@ -322,22 +322,23 @@ Por ultimo na Fase de Avaliaçao fase vamos analisar as performances obtidas de 
 ![image](https://github.com/user-attachments/assets/5764a624-0721-4b00-9577-32d63a0c4d40)
 ![image](https://github.com/user-attachments/assets/7a039023-dbd4-4c61-9113-0c46edc66a8a)
 
-### 6.1.1 Training
+## 6.2 Training
 
 Na Parte do Training Como dito Anteriormente Apenas temos de inserir o Operador `Decision Tree` e Selecionar o metodo de Divisão de Dados Pretendido 
 
 ![image](https://github.com/user-attachments/assets/b6d535f0-7188-4e84-8d02-523f7c799540)
 
 
-### 6.1.2 Testing
+## 6.3 Testing
 
 Por sua vez na Parte do Training basta selecionar os critrerio de `Acuracy` `Classification error` e `Root Mean Squared Error`
 
 ![image](https://github.com/user-attachments/assets/dae6babd-35aa-4842-be21-4cd0ed674db1)
 ![image](https://github.com/user-attachments/assets/f898ebe5-7407-49f9-b673-a3f8a6b0092b)
 
+## 6.4 Results
 
-## Gain_Ratio - Results
+### 6.4.1 Gain_Ratio
 
 ![image](https://github.com/user-attachments/assets/ac8ce7de-9f08-4619-93e3-e89deea5ca60)
 ![image](https://github.com/user-attachments/assets/4f98d125-3059-488c-80d8-82df8db0d3f3)
@@ -368,7 +369,7 @@ root_mean_squared_error: 0.294 +/- 0.237 (micro average: 0.370 +/- 0.000)
 ```
 
 
-## Information_Gain - Results
+### 6.4.2 Information_Gain 
 
 
 ![image](https://github.com/user-attachments/assets/afbfba1d-8069-4ef1-85af-f6751ce2b915)
@@ -401,7 +402,7 @@ root_mean_squared_error: 0.182 +/- 0.095 (micro average: 0.202 +/- 0.000)
 ```
 
 
-## Gini_Index - Results
+### 6.4.3 Gini_Index 
  
 
 ![image](https://github.com/user-attachments/assets/3ebf49fc-a3b2-4344-ad3a-00cd9c67889c)
@@ -434,7 +435,7 @@ True:	2	1	3	5	4	6
 root_mean_squared_error: 0.203 +/- 0.087 (micro average: 0.219 +/- 0.000)
 ```
 
-## Accuracy - Results
+## 6.4.4 Accuracy - Results
 
 
 ![image](https://github.com/user-attachments/assets/1043a979-3bd3-49f1-8994-6732a69fb392)
@@ -471,7 +472,7 @@ root_mean_squared_error: 0.207 +/- 0.088 (micro average: 0.222 +/- 0.000)
 ```
 
 
-### COMPARAÇAO DE RESULTADOS
+## 6.5 COMPARAÇAO DE RESULTADOS
 
 | Critério             | Accuracy (%)       | Classification Error (%) | RMSE   |
 |----------------------|--------------------|---------------------------|--------|
@@ -480,7 +481,7 @@ root_mean_squared_error: 0.207 +/- 0.088 (micro average: 0.222 +/- 0.000)
 | gini_index           | 95.08 ± 3.59       | 4.92 ± 3.59               | 0.203  |
 | accuracy (critério)  | 95.06 ± 3.85       | 4.94 ± 3.85               | 0.207  |
 
-### ANALISE E CONCLUSÕES Finais
+# 7. ANALISE E CONCLUSÕES Finais
 
 
 Após a aplicação integral da metodologia CRISP-DM — desde a compreensão do problema e dos dados, passando pela preparação dos dados, até à fase de modelação com o algoritmo C4.5 — avaliámos quatro critérios de divisão para a construção da árvore de decisão sobre o dataset Dermatology: gain ratio, information gain, gini index e accuracy.
@@ -512,17 +513,6 @@ Com base nesta análise, concluímos que o melhor modelo foi gerado com o crité
 
 
 
-### 6.2 Escolha Final
 
-- **Gain Ratio** selecionado como melhor critério.
-
-### 6.3 Interpretação da Árvore
-
-Principais atributos destacados:
-- Acanthosis
-- Hyperkeratosis
-- Family History
-- Scaling
-- Melanin Incontinence
 
 
