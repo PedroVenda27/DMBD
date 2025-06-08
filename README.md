@@ -112,6 +112,8 @@ Este após alterado fica marcado pela cor verde na coluna do atributo
 
 ## 5.2 Algoritmo C4.5 (Decision Tree)
 
+O algoritmo C4.5 consiste num algoritmo de decision tree (árvore de decisão), desenvolvido por Ross Quinlan, amplamente utilizado em tarefas de classificação. A construção da árvore é realizada de forma recursiva, selecionando a cada divisão o atributo mais informativo com base em critérios como gain ratio, information gain, gini index ou accuracy. Uma das principais vantagens do C4.5 é a sua capacidade de lidar com atributos contínuos e discretos, bem como com valores em falta. Além disso, o algoritmo aplica técnicas de pruning (poda) para reduzir o sobreajuste e melhorar a capacidade de generalização do modelo. O resultado final é uma árvore de decisão robusta, precisa e de fácil interpretação, adequada para a classificação de novos dados.
+
 ## 5.3 Critérios de Divisão de Dados
 
 Pasando agora aos critrios de divisão iremos explicar no que cada um consiste, demostar a sua formula e bem como analisar os seus Resultados no ambito do trabalho
