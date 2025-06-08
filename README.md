@@ -1,4 +1,5 @@
 
+
 # Projeto de Data Mining — Diagnóstico de Doenças Dermatológicas
 
 # 1. Introdução
