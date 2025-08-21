@@ -7,12 +7,12 @@ The project follows the **CRISP-DM methodology**, applying it step by step to a 
 ---
 
 ## 🚀 Project Structure
-- **📂 DMBD_PROJECT**  
-   - **DMBD_PROJECT/DBMD_ProjectPresentation.pdf** → Final Presentation  
-   - **DMBD_PROJECT/FinalWork.rmp** → RapidMiner/Altair AI file  
-   - **DMBD_PROJECT/ProjectRequirements_DMBD.pdf** → Project Requirements  
-   - **DMBD_PROJECT/README.md** → Work Report — All information about the work and process  
-   - **DMBD_PROJECT/dermatology.arff** → Dermatology Dataset  
+- 📂 [DMBD_PROJECT](./DMBD_PROJECT)  
+   - 📄 [DBMD_ProjectPresentation.pdf](./DMBD_PROJECT/DBMD_ProjectPresentation.pdf) → Final Presentation  
+   - 📄 [FinalWork.rmp](./DMBD_PROJECT/FinalWork.rmp) → RapidMiner/Altair AI file  
+   - 📄 [ProjectRequirements_DMBD.pdf](./DMBD_PROJECT/ProjectRequirements_DMBD.pdf) → Project Requirements  
+   - 📄 [README.md](./DMBD_PROJECT/README.md) → Work Report — All information about the work and process  
+   - 📄 [dermatology.arff](./DMBD_PROJECT/dermatology.arff) → Dermatology Dataset  
 
 ---
 
