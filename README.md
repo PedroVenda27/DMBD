@@ -1,6 +1,6 @@
 # 📊 Data Mining and Big Data Project — CRISP-DM with RapidMiner
 
-This repository contains the development of an individual project carried out within the course **Data Mining and Big Data** of the **Computer Informatics (2nd year, UMAIA)**.  
+This repository contains the development of an individual project carried out within the class **Data Mining and Big Data** of the course **Computer Informatics (2nd year, UMAIA)**.  
 
 The project follows the **CRISP-DM methodology**, applying it step by step to a data mining problem, with practical implementation in **RapidMiner**.  
 
